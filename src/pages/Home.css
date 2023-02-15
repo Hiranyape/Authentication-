@@ -1,0 +1,181 @@
+body{
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+p{
+    width: 100%;
+}
+
+.home{
+    width: 100%;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+   
+}
+.home-container{
+    width: 90%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    
+    position: relative;
+    
+}
+
+.logo{
+    width: 20%;
+    height: 400px;
+    display:inline-block;
+    position: sticky;
+    top: 10px;
+   
+}
+.profilepic{
+  
+    width: 60%;
+    border-radius: 50%;
+}
+.profile{
+    width: 30%;
+    height: fit-content;
+    display:flex;
+    position: sticky;
+    flex-direction: row;
+    top: 10px;
+    justify-content: space-between;
+   
+    padding: 2%;
+}
+
+.posts{
+    width: 70%;
+    
+}
+
+
+.bar-icon{
+    width: 2%;
+    background-color: transparent;
+    color: black;
+    height: fit-content; 
+    
+}
+.closebtn{
+    background-color: transparent;
+    color: rgb(255, 255, 255);
+    width: 5%;
+    height: fit-content; 
+    
+
+
+}
+.info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+.info p{
+    width: 100%;
+    text-align: center;
+}
+.logout{
+    width: 70%;
+    background-color: #FE3740;
+    border-radius: 0;
+    padding: 4%;
+}
+@media screen and (max-width: 600px){
+    .profile{
+        width: 10%;
+    }
+    .info{    
+
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: flex-start;
+        position: fixed;
+        top: 0px;
+        right: -300px;
+        width: 300px;
+        height: 100vh;
+        background-color: white;
+        padding-top: 20px;
+        transition: .5s linear ;
+    }
+
+    .info.active{
+        right: 0px;
+    }
+    
+    .home{
+        width: 100%;
+    }
+    .home-container{
+        width: 100%;
+    }
+    .logo{
+        width: 0;
+        display: none;
+    }
+    
+    .posts{
+        width: 90%;
+    }
+    
+    
+
+   
+   
+    .bar-icon{
+    display: block;
+    cursor: pointer;
+    }
+
+    .closebtn{
+        font-size: 1.25em;
+        display: block;
+        color: aliceblue;
+        cursor: pointer;
+    }
+
+   
+    
+
+}
+
+.logo img{
+    width: 100%;
+    color: #FE3740;
+}
+
+
+
+
+@media screen and (min-width: 600px){
+    .bar-icon{
+        display: none;
+    }
+    .closebtn{
+        display: none;
+    }
+}
+
+
