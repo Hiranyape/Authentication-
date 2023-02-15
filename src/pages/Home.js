@@ -6,7 +6,6 @@ import {GiHamburgerMenu} from "react-icons/gi"
 import {GrFormClose} from "react-icons/gr"
 import profilepic from "../assets/profilepic.jpg"
 import "../pages/Home.css"
-import logo from "../assets/logo2.png"
 const Home=()=>{
 
     const [posts,setPosts]=useState(null)
@@ -48,7 +47,7 @@ const Home=()=>{
         <div className="home">
         <div className="home-container">
             <div className="logo">
-                <img src={logo}></img>
+                
             </div>
             <div className="posts">
                 {posts && posts.map((post)=>(

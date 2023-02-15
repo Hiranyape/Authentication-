@@ -1,7 +1,6 @@
 import { useState} from "react";
 import { Link } from "react-router-dom";
 import { useLogin } from "../hooks/useLogin";
-import logo from "../assets/logo.png"
 import "../components/Styles/Login.css"
 import {AiOutlineEye} from "react-icons/ai"
 const Login = () =>{
@@ -46,7 +45,6 @@ const Login = () =>{
         <div className="container">
         <div className="main">
             <div className="welcomeBack">
-            <img src={logo} className="logoimg"></img>
             <h1>
                 Welcome
             </h1>

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { useSignup } from "../hooks/useSignup";
 import ReCAPTCHA from "react-google-recaptcha";
 import "../components/Styles/Signup.css"
-import logo from "../assets/logo.png"
+
 
 const Signup = () =>{
     const [email,setEmail] = useState('');
@@ -26,7 +26,6 @@ const Signup = () =>{
         <div className="container">
         <div className="main">
         <div className="welcomeBack">
-        <img src={logo} className="logoimg"></img>
         <h1>
           Welcome ! ⚡️
         </h1>
